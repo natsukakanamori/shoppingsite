@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+h1{
+	color: #f0e68c;
+	font-family: 'Staatliches', cursive;
+	font-size: 400%;
+}
+
+.menu{
+	text-align:center;
+}
+
+.menu-msg {
+	font-size: 180%;
+	font-family: 'Staatliches', cursive;
+	position: relative;
+	margin: 2em auto;
+	padding: 20px 20px 20px 35px;
+	width: 15%; /* ボックス幅 */
+	background-color: #f0e68c; /* ボックス背景色 */
+	color: #8b4513; /* 文章色 */
+	border: 1px solid white; /* 枠線 */
+	box-shadow: 2px 2px 2px white; /* 影の色 */
+}
+
+.menu-msg::before {
+	position: absolute;
+	content: '';
+	top: 5px;
+	left: 20px;
+	height: 30px;
+	border: 1.5px solid white; /* ホチキス色 */
+	border-radius: 12px;
+	box-shadow: 1px 1px 1px white;
+	transform: rotate(45deg);
+}
+
+.menu-button {
+	font-family: 'Francois One', sans-serif;
+	display: inline-block;
+	border: none; /* 枠線を消す */
+	font-size: 13pt; /* 文字サイズ */
+	text-align: center; /* 文字位置   */
+	cursor: pointer; /* カーソル   */
+	padding: 12px 16px; /* 余白       */
+	background: #f0e68c; /* 背景色     */
+	color: #8b4513; /* 文字色     */
+	line-height: 1em; /* 1行の高さ  */
+	opacity: 1; /* 透明度     */
+	transition: .3s; /* なめらか変化 */
+	box-shadow: 1px 1px #f0e68c; /* 影の設定 */
+	width: 250px;
+    height: 50px;
+}
+
+.menu-button:hover {
+	box-shadow: none; /* カーソル時の影消去 */
+	opacity: 0.8; /* カーソル時透明度 */
+}

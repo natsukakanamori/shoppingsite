@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+	background-color:#ffc0cb;
+}
+
+p {
+	color:white;
+	text-align:center;
+
+
+}
+h1{
+	color:white;
+	font-family: 'Staatliches', cursive;
+	font-size:400%;
+}
+
+.thankyou{
+	font-size:300%;
+	font-family: 'Staatliches', cursive;
+	position: relative;
+	margin: 2em auto;
+	padding: 20px 20px 20px 35px;
+	width: 30%; /* ボックス幅 */
+	background-color: white; /* ボックス背景色 */
+	color: #ffc0cb; /* 文章色 */
+	border: 1px solid white; /* 枠線 */
+	box-shadow: 2px 2px 2px white; /* 影の色 */
+}
+
+img {
+	width:30%;
+}
+.footer {
+	color:white;
+	text-align:right;
+	font-family: 'Francois One', sans-serif;
+}
+
+.link{
+	color:white;
+	font-family: 'Staatliches', cursive;
+}
