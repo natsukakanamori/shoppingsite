@@ -30,7 +30,7 @@
 
 	h3{
 		font-family: 'Oswald', sans-serif;
-		color:#8b4513;
+		color:#006400;
 		margin-top:1px;
 		font-size:160%;
 	}

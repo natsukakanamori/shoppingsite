@@ -3,10 +3,11 @@
 <%@include file="black.jsp"%>
 
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 <main>
 	<div id="wrapper">
 		<div class="contents">
+		<br><br>
 			<p class="large-letters">ADMINISTRATOR SCREEN</p>
 			<p class="small-letters"><span class="margin">delete existing products</span></p>
 		</div>
@@ -46,8 +47,8 @@
 				</table>
 
 				<p>
-					<input type="submit" value="Delete" name="button" class="admin-button"> <input
-						type="submit" value="Back" name="button" class="admin-button">
+					<input type="submit" value="Delete" name="button" formaction="delete-confirm.jsp" class="admin-button"> <input
+						type="submit" value="Back" name="button" formaction="admin-menu.jsp" class="admin-button">
 				</p>
 
 			</form>

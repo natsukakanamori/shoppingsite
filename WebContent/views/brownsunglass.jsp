@@ -26,19 +26,7 @@
 						<p class="product-description">レトロでおしゃれなサングラス</p>
 						<hr>
 						<p class="product-description2">色合いと形がレトロできれいな印象になります.</p>
-						<select name="quantity">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-						</select>
-
-						<a href="">ADD TO CART</a>
+						<a href="../CartAdd.action?id=A983458129322">ADD TO CART</a>
 
 					</td>
 				</tr>

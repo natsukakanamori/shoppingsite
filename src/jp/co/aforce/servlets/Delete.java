@@ -18,7 +18,7 @@ public class Delete extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 
 		String button = request.getParameter("button"); //jspのボタンを取得
-		String jsp = "../views/admin-delete.jsp";
+		String jsp = "../views/newadmin-delete.jsp";
 		String productId = request.getParameter("productId");
 
 		if (button.equals("View")) {
@@ -37,10 +37,10 @@ public class Delete extends HttpServlet {
 				e.printStackTrace();
 			}
 
-		} else if (button.equals("Back")) {
+		} else if (button.equals("いいえ")) {
 			jsp = "../views/newadmin-menu.jsp";
 
-		} else if (button.equals("Delete")) {
+		} else if (button.equals("はい")) {
 			ProductDAO dao = new ProductDAO(); //daoをインスタンス化
 			try {
 				if (dao.delete(productId)) { //削除できたら

@@ -42,7 +42,7 @@
 					id="menu_bar01">
 				<ul id="links01">
 					<li><a href="top.jsp">TOP</a></li>
-					<li><a href="login.jsp">LOGIN</a></li>
+					<li><a href="not-login.jsp">LOGIN</a></li>
 					<li><a href="login.jsp">PRODUCTS</a></li>
 					<li><a href="login.jsp">LOGOUT</a></li>
 				</ul>

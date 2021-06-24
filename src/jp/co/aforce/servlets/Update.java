@@ -20,7 +20,7 @@ public class Update extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 
 		// 遷移先画面の設定
-		String jsp = "../views/admin-update.jsp";
+		String jsp = "../views/newadmin-update.jsp";
 
 		// 会員番号の取得
 		String productId = request.getParameter("productId");
@@ -49,11 +49,11 @@ public class Update extends HttpServlet {
 
 			}
 
-		} else if (button.equals("Back")) {
+		} else if (button.equals("いいえ")) {
 
 			jsp = "../views/newadmin-menu.jsp";
 
-		} else if (button.equals("Update")) {
+		} else if (button.equals("はい")) {
 			// ユーザによって入力された情報を memberBean に格納する
 			ProductBean product = new ProductBean();
 			product.setProductId(productId);

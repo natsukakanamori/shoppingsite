@@ -3,10 +3,11 @@
 <%@include file="black.jsp"%>
 
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 <main>
 	<div id="wrapper">
 		<div class="contents">
+		<br><br>
 			<p class="large-letters">ADMINISTRATOR SCREEN</p>
 			<p class="small-letters"><span class="margin">Regist new products</span></p>
 		</div>
@@ -14,7 +15,7 @@
 		<div class="menu">
 		<br><br>
 			${msg}
-			<form action="../jp.co.aforce.servlets/regist" method="post">
+			<form action="" method="post">
 				<table>
 					<tr>
 						<th class="product-info">Product Name</th>
@@ -39,8 +40,9 @@
 				</table>
 				<br>
 				<p>
-					<input type="submit" value="Regist" name="button" class="admin-button"> <input
-						type="submit" value="Back" name="button" class="admin-button">
+					<input type="submit" value="Regist" name="button" class="admin-button" formaction="regist-confirm.jsp">
+					<input
+						type="submit" value="Back" name="button" class="admin-button" formaction="admin-menu.jsp">
 				</p>
 
 			</form>

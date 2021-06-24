@@ -19,9 +19,9 @@ public class Regist extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 
 		String button = request.getParameter("button");
-		String jsp = "../views/admin-regist.jsp";
+		String jsp = "../views/newadmin-regist.jsp";
 
-		if (button.equals("Regist")) {
+		if (button.equals("はい")) {
 
 			try {
 				request.setCharacterEncoding("UTF-8");
@@ -58,7 +58,7 @@ public class Regist extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		}else if (button.equals("Back")) {
+		}else if (button.equals("いいえ")) {
 			jsp = "../views/newadmin-menu.jsp";
 		}
 		request.getRequestDispatcher(jsp)

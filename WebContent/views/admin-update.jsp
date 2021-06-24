@@ -3,10 +3,11 @@
 <%@include file="black.jsp"%>
 
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 <main>
 	<div id="wrapper">
 		<div class="contents">
+		<br><br>
 			<p class="large-letters">ADMINISTRATOR SCREEN</p>
 			<p class="small-letters"><span class="margin">update existing products</span></p>
 		</div>
@@ -45,8 +46,9 @@
 				</table>
 
 				<p>
-					<input type="submit" value="Update" name="button" class="admin-button"> <input
-						type="submit" value="Back" name="button" class="admin-button">
+					<input type="submit" value="Update" name="button" class="admin-button" formaction="update-confirm.jsp">
+					<input
+						type="submit" value="Back" name="button" class="admin-button" formaction="admin-menu.jsp">
 				</p>
 
 			</form>

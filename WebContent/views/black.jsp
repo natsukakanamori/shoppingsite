@@ -27,7 +27,7 @@
 		.large-letters{
 			font-family: 'Staatliches', cursive;
 			color: white;
-			font-size:600%;
+			font-size:500%;
 			margin-bottom:1px;
 		}
 
@@ -39,7 +39,12 @@
 		}
 
 		.margin{
-			margin-left:480px;
+			margin-left:400px;
+		}
+
+		.attention{
+			font-family: 'Noto Sans JP', sans-serif;
+			font-size:130%;
 		}
 
 		.product-info{
@@ -73,6 +78,12 @@
 			box-shadow: none; /* カーソル時の影消去 */
 			opacity: 0.8; /* カーソル時透明度 */
 		}
+
+		.admin-img{
+			width:90%;
+		}
+
+
 
 		.right-colum {
 			width: 40%;
@@ -122,5 +133,12 @@
 		rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>

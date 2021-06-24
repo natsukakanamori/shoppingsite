@@ -7,11 +7,11 @@
 <title>SANTA MONICA</title>
 <style>
 body {
-	background-color: white;
+	background-color: #FFFFEE;
 }
 
 h1, .right-colum {
-	color: #4682B4;
+	color: #8b4513;
 	font-family: 'Staatliches', cursive;
 }
 
@@ -22,7 +22,7 @@ h1 {
 
 h3 {
 	font-family: 'Oswald', sans-serif;
-	color: #4682B4;
+	color: #006400;
 	margin-top: 1px;
 	font-size: 160%;
 }
@@ -53,8 +53,8 @@ h3 {
 	text-align: center; /* 文字位置   */
 	cursor: pointer; /* カーソル   */
 	padding: 12px 16px; /* 余白       */
-	background: #4682B4; /* 背景色     */
-	color: white; /* 文字色     */
+	background: #f0e68c; /* 背景色     */
+	color: #8b4513; /* 文字色     */
 	line-height: 1em; /* 1行の高さ  */
 	opacity: 1; /* 透明度     */
 	transition: .3s; /* なめらか変化 */
@@ -98,12 +98,12 @@ h3 {
 }
 
 .sorttbl th {
-	color: #fff !important;
-	background-color: #4682B4;
+	color: #8b4513;
+	background-color: #f0e68c;
 }
 
 .lettering {
-	color: #4682B4;
+	color: #8b4513;
 	font-family: 'Barlow', sans-serif;
 	font-size: 180%;
 }
@@ -133,38 +133,36 @@ h3 {
 
 .large-letters {
 	font-size: 200%;
-	color: #4682B4;
+	color: #8b4513;
 	font-family: 'Barlow', sans-serif;
 	text-align: center;
 }
 
 .small-letters {
 	font-size: 150%;
-	color: #4682B4;
+	color: #8b4513;
 	font-family: 'Barlow', sans-serif;
 	text-align: center;
 }
 
 .product-description {
 	font-size: 130%;
-	color: #4682B4;
+	color: #8b4513;
 	font-family: 'Barlow', sans-serif;
 }
 
 .product-description2 {
 	font-size: 110%;
-	color: #4682B4;
+	color: #8b4513;
 	font-family: 'Barlow', sans-serif;
 }
 
 hr {
 	border: none;
-	border-top: dashed 1px #4682B4;
+	border-top: dashed 1px #8b4513;
 	height: 1px;
 	width: 450px;
 }
-
-
 
 .right-colum {
 	max-width: 360px;
@@ -176,7 +174,7 @@ hr {
 	display: block;
 	padding: 10px;
 	text-decoration: none;
-	color: #4682B4;
+	color: #f0e68c;
 	line-height: 1;
 }
 
@@ -186,8 +184,8 @@ hr {
 	margin: 0 0 2px 0;
 	padding: 12px;
 	line-height: 1;
-	color: white;
-	background: #4682B4;
+	color: #8b4513;
+	background: #f0e68c;
 	cursor: pointer;
 }
 
@@ -198,7 +196,7 @@ hr {
 .right-colum ul {
 	margin: 0;
 	padding: 0;
-	background: white;
+	background: #8b4513;
 	list-style: none;
 }
 
@@ -219,7 +217,7 @@ hr {
 
 .right-colum {
 	text-align: center;
-	background-color: #4682B4;
+	background-color: #f0e68c;
 }
 
 #wrapper {
@@ -239,13 +237,13 @@ hr {
 }
 
 .msg {
-	color: white;
+	color: #8b4513;
 	text-align: right;
 	font-family: 'Francois One', sans-serif;
 }
 
 .footer {
-	color: #4682B4;
+	color: #8b4513;
 	font-family: 'Francois One', sans-serif;
 	text-align: right;
 }

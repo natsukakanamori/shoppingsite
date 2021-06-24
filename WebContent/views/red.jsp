@@ -6,6 +6,9 @@
 	<meta charset="UTF-8">
 	<title>SANTA MONICA</title>
 	<style>
+	body{
+		background-color:#FFFFEE;
+	}
 /*========= LoadingのためのCSS ===============*/
 
 /* Loading背景画面設定　*/
@@ -15,7 +18,7 @@
   width: 100%;
   height: 100%;
   z-index: 999;
-  background:white;
+  background:#FFFFEE;
   text-align:center;
   color:black;
 
@@ -86,7 +89,7 @@ body.appear .splashbg{
     top: 0;
   left: 0;
     transform: translateX(-300%) skewX(-45deg);
-    background-color: #ffe4e1;/*伸びる背景色の設定*/
+    background-color: #f0e68c;/*伸びる背景色の設定*/
 }
 
 @keyframes PageAnime{
@@ -143,13 +146,13 @@ body.appear #container{
 	}
 
 	h1,h4,.right-colum{
-		color:red;
+		color:#8b4513;
 		font-family: 'Staatliches', cursive;
 	}
 
 	h3{
 		font-family: 'Oswald', sans-serif;
-		color:red;
+		color:#006400;
 		margin-top:1px;
 		font-size:160%;
 	}
@@ -173,15 +176,15 @@ body.appear #container{
 	}
 
 	.tree {
-		max-width:100%;
+		width:90%;
 		text-align:right;
 	}
 
 	.welcome {
-		font-size:280%;
+		font-size:260%;
 		text-align:right;
 		font-family: 'Dela Gothic One', cursive;
-		color:red;
+		color:#006400;
 	}
 
 	.right-colum {
@@ -193,7 +196,7 @@ body.appear #container{
 		display: block;
 		padding: 10px;
 		text-decoration: none;
-		color: red;
+		color: #f0e68c;
 		line-height: 1;
 	}
 	.right-colum label {
@@ -202,8 +205,8 @@ body.appear #container{
 		margin: 0 0 2px 0;
 		padding: 12px;
 		line-height: 1;
-		color: #ffffff;
-		background: red;
+		color: #8b4513;
+		background: #f0e68c;
 		cursor: pointer;
 	}
 	.right-colum input {
@@ -212,7 +215,7 @@ body.appear #container{
 	.right-colum ul {
 		margin: 0;
 		padding: 0;
-		background: white;
+		background: #8b4513;
 		list-style: none;
 	}
 	.right-colum li {
@@ -232,7 +235,7 @@ body.appear #container{
 
 	.right-colum {
 		text-align:center;
-		background-color:red;
+		background-color:#f0e68c;
 	}
 
 	#wrapper {
@@ -252,12 +255,12 @@ body.appear #container{
 	}
 
 	.msg {
-		color:white;
+		color:#8b4513;
 		text-align:right;
 		font-family: 'Francois One', sans-serif;
 	}
 	.footer {
-		color:red;
+		color:#8b4513;
 		font-family: 'Francois One', sans-serif;
 		text-align:right;
 	}

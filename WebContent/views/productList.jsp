@@ -37,7 +37,7 @@
 						alt="product1" class="product"></a></td>
 					<td class="lettering">jacquard towel</td>
 					<td class="lettering">3000yen</td>
-					<td class="lettering"><a href="">ADD TO CART</a></td>
+					<td class="lettering"><a href="../CartAdd.action?id=A200305075522">ADD TO CART</a></td>
 				</tr>
 
 				<tr class="item">
@@ -45,14 +45,14 @@
 						class="product"></a></td>
 					<td class="lettering" width="160">american cap</td>
 					<td class="lettering" width="160">1300yen</td>
-					<td class="lettering" width="160"><a href="">ADD TO CART</a></td>
+					<td class="lettering" width="160"><a href="../CartAdd.action?id=A200383225522">ADD TO CART</a></td>
 				</tr>
 				<tr class="item">
 					<td><a href="navycap.jsp"><img src="../img/cliffedge_20020804_2.jpg" alt="product3"
 						class="product"></a></td>
 					<td class="lettering">navy cap</td>
 					<td class="lettering">1200yen</td>
-					<td class="lettering"><a href="">ADD TO CART</a></td>
+					<td class="lettering"><a href="../CartAdd.action?id=A220394222522">ADD TO CART</a></td>
 				</tr>
 
 				<tr class="item">
@@ -60,7 +60,7 @@
 						class="product"></a></td>
 					<td class="lettering">simple sandal</td>
 					<td class="lettering">1800yen</td>
-					<td class="lettering"><a href="">ADD TO CART</a></td>
+					<td class="lettering"><a href="../CartAdd.action?id=A220456782522">ADD TO CART</a></td>
 				</tr>
 
 				<tr class="item">
@@ -68,7 +68,7 @@
 						alt="product5" class="product"></a></td>
 					<td class="lettering">parmtree sandal</td>
 					<td class="lettering">1700yen</td>
-					<td class="lettering"><a href="">ADD TO CART</a></td>
+					<td class="lettering"><a href="../CartAdd.action?id=A220456854322">ADD TO CART</a></td>
 				</tr>
 
 				<tr class="item">
@@ -76,7 +76,7 @@
 						alt="product5" class="product"></a></td>
 					<td class="lettering">black sunglass</td>
 					<td class="lettering">2100yen</td>
-					<td class="lettering"><a href="">ADD TO CART</a></td>
+					<td class="lettering"><a href="../CartAdd.action?id=A262458954322">ADD TO CART</a></td>
 				</tr>
 
 				<tr class="item">
@@ -84,7 +84,7 @@
 						class="product"></a></td>
 					<td class="lettering">brown sunglass</td>
 					<td class="lettering">2500yen</td>
-					<td class="lettering"><a href="">ADD TO CART</a></td>
+					<td class="lettering"><a href="../CartAdd.action?id=A983458129322">ADD TO CART</a></td>
 				</tr>
 
 				<tr class="item">
@@ -92,7 +92,7 @@
 						class="product"></a></td>
 					<td class="lettering">logo towel</td>
 					<td class="lettering">2800yen</td>
-					<td class="lettering"><a href="">ADD TO CART</a></td>
+					<td class="lettering"><a href="../CartAdd.action?id=A983458129920">ADD TO CART</a></td>
 				</tr>
 
 			</table>
