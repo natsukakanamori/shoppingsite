@@ -25,8 +25,8 @@
 				<input type="hidden" value="<%=price%>" name="price">
 				<input type="hidden" value="<%=image%>" name="image">
 				<input type="hidden" value="<%=categoryId%>" name="categoryId">
-				<input type="submit" value="はい" name="button" class="admin-button">
-				<input type="submit" value="いいえ" name="button" class="admin-button">
+				<input type="submit" value="OK" name="button" class="admin-button">
+				<input type="submit" value="CANCEL" name="button" class="admin-button">
 			</form>
 		</div>
 	</div>

@@ -16,7 +16,7 @@
 		<br><br>
 			${msg}
 			<form action="" method="post">
-				<table>
+				<table class="product-table">
 					<tr>
 						<th class="product-info">Product Name</th>
 						<td class="admin-form"><input type="text" name="productName" ></td>
@@ -40,9 +40,9 @@
 				</table>
 				<br>
 				<p>
-					<input type="submit" value="Regist" name="button" class="admin-button" formaction="../views/regist-confirm.jsp">
+					<input type="submit" value="REGIST" name="button"  onclick="return confirm('商品を登録します.よろしいですか？');" class="admin-button" >
 					<input
-						type="submit" value="Back" name="button" class="admin-button" formaction="../views/admin-menu.jsp">
+						type="submit" value="BACK" name="button" class="admin-button">
 				</p>
 
 			</form>
@@ -51,6 +51,14 @@
 	</div>
 </main>
 
-
+<script type="text/javascript">
+	function submitbtn() {
+		if (confirm('商品を登録します.よろしいですか?')) {
+			alert('OK');
+		} else {
+			alert('CANCEL');
+		}
+	}
+</script>
 
 <%@include file="footer.html"%>

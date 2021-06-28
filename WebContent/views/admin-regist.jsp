@@ -1,25 +1,36 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@include file="black.jsp"%>
 
 
-<br><br><br><br><br><br><br><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <main>
 	<div id="wrapper">
 		<div class="contents">
-		<br><br>
+			<br>
+			<br>
 			<p class="large-letters">ADMINISTRATOR SCREEN</p>
-			<p class="small-letters"><span class="margin">Regist new products</span></p>
+			<p class="small-letters">
+				<span class="margin">Regist new products</span>
+			</p>
 		</div>
 
 		<div class="menu">
-		<br><br>
-			${msg}
-			<form action="" method="post">
-				<table>
+			<br>
+			<br> ${msg}
+			<form action="../jp.co.aforce.servlets/regist" method="post">
+				<table class="product-table">
 					<tr>
 						<th class="product-info">Product Name</th>
-						<td class="admin-form"><input type="text" name="productName" ></td>
+						<td class="admin-form"><input type="text" name="productName"></td>
 					</tr>
 
 					<tr>
@@ -40,17 +51,26 @@
 				</table>
 				<br>
 				<p>
-					<input type="submit" value="Regist" name="button" class="admin-button" formaction="regist-confirm.jsp">
-					<input
-						type="submit" value="Back" name="button" class="admin-button" formaction="admin-menu.jsp">
+					<input type="submit" value="REGIST" name="button"
+						onclick="return confirm('商品を登録します.よろしいですか？');"
+						class="admin-button"> <input type="submit" value="BACK"
+						name="button" class="admin-button">
 				</p>
 
 			</form>
-		<br>
+			<br>
 		</div>
 	</div>
 </main>
 
-
+<script type="text/javascript">
+	function submitbtn() {
+		if (confirm('商品を登録します.よろしいですか?')) {
+			alert('OK');
+		} else {
+			alert('CANCEL');
+		}
+	}
+</script>
 
 <%@include file="footer.html"%>

@@ -19,12 +19,19 @@ public class PreviewAction extends Action {
 		response.setContentType("text/html; charset=UTF-8");
 
 		String jsp = "purchase-in.jsp";
+		String button = request.getParameter("button");
 
-		HttpSession session = request.getSession();
+		if (button.equals("購入する")) {
 
-		List<NewProductBean> cart = (List<NewProductBean>) session.getAttribute("cart");
-		if (cart == null || cart.size() == 0) {
-			return jsp = "preview-error-cart.jsp";
+			HttpSession session = request.getSession();
+
+			List<NewProductBean> cart = (List<NewProductBean>) session.getAttribute("cart");
+			if (cart == null || cart.size() == 0) {
+				return jsp = "preview-error-cart.jsp";
+			}
+
+		} else if(button.equals("買い物を続ける")){
+			jsp="new-productList.jsp";
 		}
 
 		return jsp;

@@ -36,17 +36,15 @@
 				</tr>
 
 				<tr class="item">
-					<td><img src="${list[0].image}" width="30%" class="product"></td>
+					<td><img src="../img/${list[0].image}" width="30%" class="product"></td>
 					<td class="lettering" width="160">${list[0].productName}</td>
 					<td class="lettering" width="160">${list[0].price}yen</td>
-					<td class="lettering" width="160"><a href="">ADD TO CART</a></td>
 				</tr>
 
 				<tr class="item">
-					<td><img src="${list[1].image}" width="30%" class="product"></td>
+					<td><img src="../img/${list[1].image}" width="30%" class="product"></td>
 					<td class="lettering" width="160">${list[1].productName}</td>
 					<td class="lettering" width="160">${list[1].price}yen</td>
-					<td class="lettering" width="160"><a href="">ADD TO CART</a></td>
 				</tr>
 			</table>
 		</div>
@@ -66,3 +64,7 @@
 		</div>
 	</div>
 </main>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<%@include file="footer.html"%>

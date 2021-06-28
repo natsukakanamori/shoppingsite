@@ -52,9 +52,4 @@
 </main>
 
 
-<footer>
-	<p class="footer">Copyright 2021 Natsuka Kanamori</p>
-</footer>
-
-
 <%@include file="footer.html"%>

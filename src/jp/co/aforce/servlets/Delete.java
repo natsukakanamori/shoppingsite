@@ -37,11 +37,12 @@ public class Delete extends HttpServlet {
 				e.printStackTrace();
 			}
 
-		} else if (button.equals("いいえ")) {
+		} else if (button.equals("Back")) {
 			jsp = "../views/newadmin-menu.jsp";
 
-		} else if (button.equals("はい")) {
+		} else if (button.equals("Delete")) {
 			ProductDAO dao = new ProductDAO(); //daoをインスタンス化
+
 			try {
 				if (dao.delete(productId)) { //削除できたら
 					System.out.println(dao.delete(productId));
@@ -52,6 +53,7 @@ public class Delete extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+
 		}
 		request.getRequestDispatcher(jsp)
 				.forward(request, response); //フォワード

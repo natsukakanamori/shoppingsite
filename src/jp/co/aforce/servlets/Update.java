@@ -49,11 +49,11 @@ public class Update extends HttpServlet {
 
 			}
 
-		} else if (button.equals("いいえ")) {
+		} else if (button.equals("Back")) {
 
 			jsp = "../views/newadmin-menu.jsp";
 
-		} else if (button.equals("はい")) {
+		} else if (button.equals("Update")) {
 			// ユーザによって入力された情報を memberBean に格納する
 			ProductBean product = new ProductBean();
 			product.setProductId(productId);
@@ -64,15 +64,25 @@ public class Update extends HttpServlet {
 
 			ProductDAO productDao = new ProductDAO();
 
-			// 変更処理を実行
-			if (productDao.update(product)) {
+			//全て入力されているかどうかのチェック
+			if (productDao.inputCheck(product)) {
 
-				request.setAttribute("msg", "変更に成功しました.");
-				request.setAttribute("product", product);
+				// 変更処理を実行
+				if (productDao.update(product)) {
 
+					request.setAttribute("msg", "変更に成功しました.");
+					request.setAttribute("product", product);
+
+				} else {
+
+					request.setAttribute("msg", "変更に失敗しました.");
+					request.setAttribute("product", product);
+
+				}
 			} else {
 
-				request.setAttribute("msg", "変更に失敗しました.");
+				// エラーメッセージを設定
+				request.setAttribute("msg", "入力されていない項目があります");
 				request.setAttribute("product", product);
 
 			}
@@ -81,5 +91,4 @@ public class Update extends HttpServlet {
 		// 遷移先画面に遷移する
 		request.getRequestDispatcher(jsp).forward(request, response);
 	}
-
 }

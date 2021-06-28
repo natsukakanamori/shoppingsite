@@ -31,10 +31,6 @@
 					<input type="password" name="password" placeholder="password" class="idpass-form" value="${members.password}">
 				</p>
 				<br>
-				<p class="remember">
-					<input type="checkbox" name="remember" value="remember">
-					save your password.
-				</p><br>
 				<p>
 					<input type="submit" value="login" class="loginout-button">
 				</p>
@@ -58,12 +54,6 @@
 
 
 </main>
-
-<br>
-
-<footer>
-	<p class="footer">Copyright 2021 Natsuka Kanamori</p>
-</footer>
 
 
 <%@include file="footer.html"%>

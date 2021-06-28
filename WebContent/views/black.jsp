@@ -44,12 +44,13 @@
 
 		.attention{
 			font-family: 'Noto Sans JP', sans-serif;
+			color: black;
 			font-size:130%;
 		}
 
 		.product-info{
 			font-family: 'Julius Sans One', sans-serif;
-			color: #696969;
+			color: black;
 			font-size:130%;
 		}
 
@@ -91,10 +92,15 @@
 
 
 		.menu{
+			width: 40%;
 			text-align:center;
 			background-color:white;
 		}
 
+		.product-table{
+			margin-right: auto;
+			margin-left: auto;
+		}
 
 		.menu-button {
 			font-family: 'Julius Sans One', sans-serif;

@@ -116,10 +116,6 @@
 
 </main>
 
-<footer>
-	<p class="footer">Copyright 2021 Natsuka Kanamori</p>
-</footer>
-
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 
 

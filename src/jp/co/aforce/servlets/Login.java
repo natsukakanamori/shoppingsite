@@ -23,7 +23,7 @@ public class Login extends HttpServlet{
 		//リクエストパラメーターを受け取る
 		String id = request.getParameter("id");
 		String password = request.getParameter("password");
-		String jsp = "../views/login.jsp";
+		String jsp = "../views/not-login.jsp";
 
 		HttpSession session = request.getSession();
 
@@ -48,7 +48,7 @@ public class Login extends HttpServlet{
 
 			} else {
 				members = new MemberBean();
-				members.setMsg("idまたはパスワードが違います");
+				members.setMsg("idまたはパスワードが違います.");
 				members.setId(id);
 				members.setPassword(password);
 

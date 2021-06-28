@@ -9,6 +9,20 @@ import java.text.SimpleDateFormat;
 import jp.co.aforce.bean.ProductBean;
 
 public class ProductDAO extends DAO {
+
+	// 必須チェック
+		public boolean inputCheck(ProductBean product) {
+
+			if (product.getProductId().isEmpty() || product.getProductName().isEmpty() || product.getPrice() == 0
+					|| product.getImage().isEmpty() || product.getCategoryId().isEmpty()) {
+
+				return false;
+
+			}
+
+			return true;
+		}
+
 	//追加
 	public int insert(ProductBean product) throws Exception {
 		Connection con = getConnection();

@@ -18,7 +18,7 @@
 		</div>
 
 		<div class="menu">
-			<table>
+			<table class="product-table">
 				<tr>
 					<th>productId</th>
 					<th>productName</th>
@@ -31,7 +31,7 @@
 						<td>${product.productId}</td>
 						<td>${product.productName}</td>
 						<td>${product.price}</td>
-						<td width="150"><img src="${product.image}" class="admin-img"></td>
+						<td width="130"><img src="../img/${product.image}" class="admin-img"></td>
 						<td>${product.categoryId}</td>
 					</tr>
 				</c:forEach>

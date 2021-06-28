@@ -43,8 +43,8 @@
 				<ul id="links01">
 					<li><a href="top.jsp">TOP</a></li>
 					<li><a href="not-login.jsp">LOGIN</a></li>
-					<li><a href="login.jsp">PRODUCTS</a></li>
-					<li><a href="login.jsp">LOGOUT</a></li>
+					<li><a href="not-login.jsp">PRODUCTS</a></li>
+					<li><a href="not-login.jsp">LOGOUT</a></li>
 				</ul>
 				<p class="msg">
 					I hope<br>you can find something <br>you like...
@@ -53,12 +53,6 @@
 		</div>
 	</main>
 
-
-
-	<br> <br> <br>
-	<footer>
-		<p class="footer">Copyright 2021 Natsuka Kanamori</p>
-	</footer>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"

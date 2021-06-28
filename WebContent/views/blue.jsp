@@ -32,7 +32,7 @@ h3 {
 }
 
 .product {
-	width: 20%;
+	width: 30%;
 	border: 2px solid #d3d3d3;
 }
 
@@ -72,9 +72,11 @@ h3 {
 	border-spacing: 0;
 	width: 75%;
 	display: table;
-	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	/*---position: absolute;
 	top: 260px;
-	left: 100px;
+	left: 100px;---*/
 }
 
 .sorttbl tr {
@@ -162,6 +164,44 @@ hr {
 	border-top: dashed 1px #8b4513;
 	height: 1px;
 	width: 450px;
+}
+
+.cart-size {
+	text-align: center;
+	color: #8b4513;
+}
+
+.td-design {
+	font-size: 160%;
+	color: #8b4513;
+}
+
+.info-form {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.button-form {
+	text-align: center;
+}
+
+.product-purchase{
+	width: 80%;
+	border: 2px solid #d3d3d3;
+}
+
+.thankyou{
+	font-size:300%;
+	font-family: 'Staatliches', cursive;
+	position: relative;
+	margin: 2em auto;
+	padding: 20px 20px 20px 35px;
+	width: 30%; /* ボックス幅 */
+	background-color: white; /* ボックス背景色 */
+	color: #006400; /* 文章色 */
+	border: 1px solid white; /* 枠線 */
+	box-shadow: 2px 2px 2px white; /* 影の色 */
+	text-align:center;
 }
 
 .right-colum {

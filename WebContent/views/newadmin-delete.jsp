@@ -15,12 +15,12 @@
 		<div class="menu">
 		<br>
 			${msg}
-			<form action="../jp.co.aforce.servlets/delete" method="post">
+			<form action="delete" method="post">
 				<p class="product-info">
 					<b>Product Id</b> <input type="text" name="productId" value="${product.productId}" class="admin-form"> <input
 						type="submit" value="View" name="button" class="admin-button">
 				</p>
-				<table>
+				<table class="product-table">
 					<tr>
 						<th class="product-info">Product Name</th>
 						<td class="admin-form"><input type="text" name="productName"
@@ -46,9 +46,10 @@
 				</table>
 
 				<p>
-					<input type="submit" value="Delete" name="button" class="admin-button" formaction="../views/delete-confirm.jsp">
-					<input
-						type="submit" value="Back" name="button" class="admin-button" formaction="../views/admin-menu.jsp">
+					<input type="submit" value="Delete" name="button"
+						class="admin-button"
+						onclick="return confirm('商品を削除します.よろしいですか？');"> <input
+						type="submit" value="Back" name="button" class="admin-button" >
 				</p>
 
 			</form>
@@ -57,6 +58,14 @@
 	</div>
 </main>
 
-
+<script type="text/javascript">
+	function submitbtn() {
+		if (confirm('商品を削除します.よろしいですか?')) {
+			alert('OK');
+		} else {
+			alert('CANCEL');
+		}
+	}
+</script>
 
 <%@include file="footer.html"%>

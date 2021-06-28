@@ -21,7 +21,7 @@
 						type="submit" value="View" name="button" class="admin-button">
 				</p>
 
-				<table>
+				<table class="product-table">
 					<tr>
 						<th class="product-info">Product Name</th>
 						<td class="admin-form"><input type="text" name="productName"
@@ -47,8 +47,8 @@
 				</table>
 
 				<p>
-					<input type="submit" value="Delete" name="button" formaction="delete-confirm.jsp" class="admin-button"> <input
-						type="submit" value="Back" name="button" formaction="admin-menu.jsp" class="admin-button">
+					<input type="submit" value="Delete" name="button" class="admin-button"  onclick="return confirm('商品を削除します.よろしいですか？');"> <input
+						type="submit" value="Back" name="button" class="admin-button">
 				</p>
 
 			</form>
@@ -57,6 +57,14 @@
 	</div>
 </main>
 
-
+<script type="text/javascript">
+	function submitbtn() {
+		if (confirm('商品を削除します.よろしいですか?')) {
+			alert('OK');
+		} else {
+			alert('CANCEL');
+		}
+	}
+</script>
 
 <%@include file="footer.html"%>
