@@ -28,21 +28,32 @@
 				<c:forEach var="p" items="${cart}">
 					<tr>
 						<td><p class="td-design">${p.product.productId}</p></td>
-						<td><img src="img/${p.product.image}" alt="product" class="product-purchase"></td>
+						<td><img src="img/${p.product.image}" alt="product"
+							class="product-purchase"></td>
 						<td><p class="td-design">${p.product.productName}</p></td>
 						<td><p class="td-design">${p.product.price}yen</p></td>
 						<td width="60"><p class="td-design">${p.count}個</p></td>
-						<td><p class="td-design"><a href="CartRemove.action?id=${p.product.productId}">Delete</a></p></td>
-						<td width="180"><p class="td-design">小計:${p.product.price * p.count}yen </p></td>
+						<td><p class="td-design">
+								<a href="CartRemove.action?id=${p.product.productId}">Delete</a>
+							</p></td>
+						<td width="180" class="subtotal-design">小計:<p class="subTotal">${p.product.price * p.count}
+							yen</p></td>
 					</tr>
 				</c:forEach>
 			</table>
 
-			<p class="cart-size">合計:</p>
+			<br>
+			<div class="cart-size">
+				合計:<p id="total"></p>
+
+			</div>
+
+
 			<br>
 			<form action="Preview.action" method="post" class="button-form">
-				<input type="submit" value="購入する" name="button" class="search-button"> <input
-					type="submit" value="買い物を続ける" name="button" class="search-button">
+				<input type="submit" value="購入する" name="button"
+					class="search-button"> <input type="submit" value="買い物を続ける"
+					name="button" class="search-button">
 			</form>
 		</div>
 
@@ -61,5 +72,16 @@
 		</div>
 	</div>
 </main>
+
+<script>
+	let subTotal = document.getElementsByClassName("subTotal");
+	let total = 0;
+
+	for (let i = 0; i < subTotal.length; i++){
+		console.log(subTotal[i].textContent);
+		total = total + parseInt(subTotal[i].textContent);
+	}
+	document.getElementById("total").textContent = total;
+</script>
 
 <%@include file="footer.html"%>

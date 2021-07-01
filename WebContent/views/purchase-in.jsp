@@ -29,13 +29,17 @@
 						<td><p class="td-design">
 								<a href="CartRemove.action?id=${p.product.productId}">Delete</a>
 							</p></td>
-						<td width="180"><p class="td-design">小計:${p.product.price * p.count}yen
-							</p></td>
+						<td width="180" class="subtotal-design">小計:<p class="subTotal">${p.product.price * p.count}
+							yen</p></td>
 					</tr>
 				</c:forEach>
 			</table>
 
-			<p class="cart-size">合計:</p>
+			<br>
+			<div class="cart-size">
+				合計:<p id="total"></p>
+
+			</div>
 			<br>
 
 
@@ -88,6 +92,15 @@
 			alert('CANCEL');
 		}
 	}
+
+	let subTotal = document.getElementsByClassName("subTotal");
+	let total = 0;
+
+	for (let i = 0; i < subTotal.length; i++){
+		console.log(subTotal[i].textContent);
+		total = total + parseInt(subTotal[i].textContent);
+	}
+	document.getElementById("total").textContent = total;
 </script>
 
 

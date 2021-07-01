@@ -20,7 +20,7 @@
 				<p><input type="submit" value="Update existing products" formaction="../views/admin-update.jsp" class="menu-button"></p>
 				<p><input type="submit" value="Delelte existing products" formaction="../views/admin-delete.jsp" class="menu-button"></p>
 				<p><input type="submit" value="Display productlist" formaction="../jp.co.aforce.servlets/all" class="menu-button"></p>
-				<input type="submit" value="TOP PAGE" name="button" formaction="../views/top.jsp" class="admin-button">
+				<input type="submit" value="LOGOUT" name="button" formaction="../jp.co.aforce.servlets/adminlogout" class="admin-button">
 			</form>
 		<br>
 		</div>

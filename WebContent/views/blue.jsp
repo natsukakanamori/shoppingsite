@@ -176,6 +176,11 @@ hr {
 	color: #8b4513;
 }
 
+.subtotal-design{
+	font-size: 120%;
+	color: #8b4513;
+}
+
 .info-form {
 	margin-right: auto;
 	margin-left: auto;

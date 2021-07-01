@@ -106,8 +106,8 @@
 	.result{
 		font-family: 'Staatliches', cursive;
 		text-align: center;
-		font-size:700%;
-		color: #8b4513;
+		font-size:600%;
+		color: #006400;
 	}
 
 	.result-link{
